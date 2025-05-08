@@ -1,0 +1,21 @@
+:host {
+    // background-color: #6e70e6;
+    background-color: var(--mat-sys-primary-container);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.navbar-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 8px 16px;
+
+    & .flex-spacer {
+        flex-grow: 1;
+    }
+}

@@ -1,1 +1,45 @@
-/* You can add global styles to this file, and also import other style files */
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+@use 'sass:map';
+@use '../custom-theme_theme-colors.scss' as custom;
+
+html {
+  @include mat.theme((
+    color: (
+      primary: custom.$primary-palette,
+      tertiary: custom.$tertiary-palette,
+    ),
+    typography: Roboto,
+    density: 0
+  ));
+}/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { 
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+
+  color: var(--mat-sys-on-surface);
+  background-color: var(--mat-sys-on-secondary);
+
+  &.dark-mode {
+    color-scheme: dark;
+  }
+
+  @media(prefers-contrast: more) {
+    @include custom.high-contrast-overrides(color-scheme);
+  }
+
+}
+
+// $info: (
+//   bg: #000,
+//   size: 40px
+// );
+
+// body {
+//   background-color: map.get($info, bg);
+//   font-size: map.get($info, size);
+// }

@@ -1,0 +1,11 @@
+<nav class="navbar-header">
+    <a mat-button>Generic Link 1</a>
+    <a mat-button>Generic Link 2</a>
+    <a mat-button>Generic Link 3</a>
+    <div class="flex-spacer"></div>
+    <button mat-icon-button (click)="isDarkMode.set(!isDarkMode())">
+        <mat-icon>
+            {{isDarkMode() ? 'dark_mode' : 'light_mode'}}
+        </mat-icon>
+    </button>
+</nav>
