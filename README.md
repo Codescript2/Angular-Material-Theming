@@ -1,6 +1,9 @@
-# AngularMaterialTheming
+# Angular Material Theming
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.0.
+
+## Link to the youtube video
+[Youtube Video](https://youtu.be/7lom4sQjunE?si=4TLgfcWCakN9mmg4)
 
 ## Development server
 
